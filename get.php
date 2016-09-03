@@ -1,5 +1,13 @@
 <?php
 
+
+
+$doc = new DOMDocument();
+$doc->loadHTML("<html><body>Test<br></body></html>");
+echo $doc->saveHTML();
+
+
+/*
 var_dump("1");
 
 $html = file_get_contents('http://www.ktr.mlit.go.jp/tonedamu/teikyo/realtime/live/fujiwara.html');
@@ -16,3 +24,4 @@ var_dump("4");
 
 
 $xml = simplexml_import_dom($dom);//解析したXML文字列をオブジェクトに変換します。
+*/
