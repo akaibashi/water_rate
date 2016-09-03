@@ -1,9 +1,16 @@
 <?php
 
 
-
+var_dump("1");
 $doc = new DOMDocument();
+
+var_dump("2");
+
 $doc->loadHTML("<html><body>Test<br></body></html>");
+
+var_dump("3");
+
+
 echo $doc->saveHTML();
 
 
