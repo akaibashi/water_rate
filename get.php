@@ -4,10 +4,8 @@
 try{
 
 var_dump("1");
-$doc = new DOMDocument();
-
 var_dump("2");
-
+$doc = new DOMDocument();
 $doc->loadHTML("<html><body>Test<br></body></html>");
 
 var_dump("3");
