@@ -1,6 +1,8 @@
 <?php
 
 
+try{
+
 var_dump("1");
 $doc = new DOMDocument();
 
@@ -12,6 +14,10 @@ var_dump("3");
 
 
 echo $doc->saveHTML();
+
+}catch(Exception $e){
+	var_dump($e);
+}
 
 
 /*
