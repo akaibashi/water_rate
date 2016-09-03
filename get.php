@@ -7,3 +7,7 @@ $dom = new DOMDocument();
 
 
 $xml = simplexml_import_dom($dom);//解析したXML文字列をオブジェクトに変換します。
+
+
+
+var_dump($xml);
