@@ -5,11 +5,17 @@ $dom = new DOMDocument();
 
 @$dom->loadHTML($html);
 
+$xpath = new DOMXPath($dom);
+// title
+$title = $xpath->query('//head/title[1]')->item(0)->nodeValue;
+echo $title . "\n";
 
-$xml = simplexml_import_dom($dom);//解析したXML文字列をオブジェクトに変換します。
+
+//$xml = simplexml_import_dom($dom);//解析したXML文字列をオブジェクトに変換します。
 
 
-
+/*
 $root       = $xml->getElementsByTagName("table")->item(0);
 
 var_dump($root);
+*/
