@@ -13,7 +13,7 @@ $xpath = new DOMXPath($dom);
 
 $trs = $xpath->query('//body//tr');
 foreach($trs as $tr){
-var_dump($tr);
+var_dump($trest);
 }
 
 
