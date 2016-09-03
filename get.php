@@ -10,4 +10,6 @@ $xml = simplexml_import_dom($dom);//解析したXML文字列をオブジェク�
 
 
 
-var_dump($xml);
+$root       = $xml->getElementsByTagName("table")->item(0);
+
+var_dump($root);
