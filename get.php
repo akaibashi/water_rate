@@ -7,7 +7,8 @@ $dom = new DOMDocument();
 
 $xpath = new DOMXPath($dom);
 // title
-$title = $xpath->query('//head/title[1]')->item(0)->nodeValue;
+//$title = $xpath->query('//head/title[1]')->item(0)->nodeValue;
+$title = $xpath->query('//body/table/tr[1]/tbody/tr[0]/td/table/tbody/tr[3]')->item(0)->nodeValue;
 echo $title . "\n";
 
 
