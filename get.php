@@ -12,8 +12,14 @@ $html = file_get_contents('http://www.ktr.mlit.go.jp/tonedamu/teikyo/realtime/li
 
 var_dump("aa2");
 
-//DOM取得
-$doc = phpQuery::newDocument($html);
+try{
+	//DOM取得
+	$doc = phpQuery::newDocument($html);
+
+}catch(Exception $e){
+	var_dump($e);
+}
+
 
 var_dump("aa3");
 
